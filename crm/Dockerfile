@@ -10,10 +10,10 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
 
 # If you don't have a requirements.txt, you can install the required packages directly
-# RUN pip install flask speechrecognition gtts requests
+RUN pip install flask speechrecognition gtts requests
 
 # Expose the port the app runs on
 EXPOSE 15000
